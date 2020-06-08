@@ -1,0 +1,49 @@
+.header{
+    text-align: center;
+    background-color:#96CC39;
+    margin: 0 auto;
+    color:white;
+    height: 80px;
+    padding-top: 10px;
+
+}
+
+#hulk{
+    background: url('./img/Bruce.jpg') no-repeat center;
+    margin: 0 auto;
+    width: 1000px;
+    height: 450px;
+    background-size: 100%;
+}
+
+#hulk.hulkimage{
+    background: url('./img/Hulk.jpg') no-repeat center;
+    margin: 0 auto;
+    width: 1000px;
+    height: 450px;
+    background-size: 100%;
+}
+                                                                                            
+#angerbar{
+    border:  2px solid Black;
+    margin: 0  auto 20px auto;
+    width: 200px;
+}
+
+#Heading{
+    text-align: center;
+    color:red;
+}
+
+#angerbar div{
+    background:green;
+    height:20px;
+}
+
+
+
+
+#controls{
+    margin: 0 auto;
+    width: 171px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulk</title>
+
+    <!-- vue Link -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Styling -->
+
+    <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+    <div id="vue-app">
+            <!-- header -->
+
+            <div class="header">
+                <h1>Bruce Banner</h1>
+            </div>
+
+            <!--    iMAGE-->
+            <div id="hulk" v-bind:class="{ hulkimage: angery }">
+
+            </div>
+
+            <!-- Heading -->
+            <h1 id="Heading">Anger Level</h1>
+
+            <!-- AngerBAr -->
+
+            <div id="angerbar">
+                <div v-bind:style="{width:angerlevel + '%'}">
+                        {{angerlevel}}%
+                </div>
+            </div>
+
+            <!-- controls -->
+            <div id="controls">
+                <button @click="makeAngery" v-show="!angery">Make Angery</button>
+                <button @click="restart">Restart</button>
+                
+            </div>
+
+    </div>
+    
+</body>
+
+<script src="app.js"></script>
+</html>
